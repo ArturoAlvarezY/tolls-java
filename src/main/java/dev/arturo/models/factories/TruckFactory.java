@@ -9,8 +9,9 @@ public class TruckFactory extends TollFactory {
     }
 
     @Override
-    public IVehicle amountToPay() {
-        throw new UnsupportedOperationException("Unimplemented method 'amountToPay'");
+    public IVehicle creatVehicle() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'creatVehicle'");
     }
     
 }

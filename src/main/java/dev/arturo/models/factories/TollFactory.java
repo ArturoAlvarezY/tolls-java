@@ -33,5 +33,5 @@ public abstract class TollFactory {
         this.tollAmount = integer;
     }
     
-    public abstract IVehicle amountToPay();
+    public abstract IVehicle creatVehicle();
 }   
