@@ -6,8 +6,8 @@ import dev.arturo.models.implementation.IVehicle;
 public class Motocycle implements IVehicle {
 
     @Override
-    public Number amountToPay(Toll tollFactory) {
-        tollFactory.setTollAmount(tollFactory.getTollAmount()+1);
+    public Integer amountToPay(Toll toll) {
+        toll.setTollAmount(toll.getTollAmount()+1);
         return 50;
     }
     

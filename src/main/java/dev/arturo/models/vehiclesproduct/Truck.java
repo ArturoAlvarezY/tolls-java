@@ -20,9 +20,9 @@ public class Truck implements IVehicle{
     }
 
     @Override
-    public Number amountToPay(Toll tollFactory) {
+    public Integer amountToPay(Toll toll) {
 
-        tollFactory.setTollAmount(tollFactory.getTollAmount() +1);
+        toll.setTollAmount(toll.getTollAmount() +1);
 
        return this.axis * 50;
     }
