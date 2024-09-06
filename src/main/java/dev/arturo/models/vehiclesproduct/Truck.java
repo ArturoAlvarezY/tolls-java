@@ -7,7 +7,9 @@ public class Truck implements IVehicle{
 
     @Override
     public TollFactory amountToPay() {
-        throw new UnsupportedOperationException("Unimplemented method 'amountToPay'");
+        if (amountToPay()) {
+            
+        }
     }
     
 }

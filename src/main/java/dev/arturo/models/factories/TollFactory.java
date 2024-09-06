@@ -6,9 +6,9 @@ public abstract class TollFactory {
    
     private String name;
     private String city;
-    private Number tollAmount;
+    private Integer tollAmount;
 
-    public TollFactory(String name, String city, Number tollAmount) {
+    public TollFactory(String name, String city, Integer tollAmount) {
         this.name = name;
         this.city = city;
         this.tollAmount = tollAmount;
@@ -26,11 +26,11 @@ public abstract class TollFactory {
     public void setCity(String city) {
         this.city = city;
     }
-    public Number getTollAmount() {
+    public Integer getTollAmount() {
         return tollAmount;
     }
-    public void setTollAmount(Number tollAmount) {
-        this.tollAmount = tollAmount;
+    public void setTollAmount(Integer integer) {
+        this.tollAmount = integer;
     }
     
     public abstract IVehicle amountToPay();

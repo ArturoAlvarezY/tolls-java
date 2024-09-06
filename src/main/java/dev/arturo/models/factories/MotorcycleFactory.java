@@ -4,7 +4,7 @@ import dev.arturo.models.implementation.IVehicle;
 
 public class MotorcycleFactory extends TollFactory{
 
-    public MotorcycleFactory(String name, String city, Number tollAmount) {
+    public MotorcycleFactory(String name, String city, Integer tollAmount) {
         super(name, city, tollAmount);
     }
 
