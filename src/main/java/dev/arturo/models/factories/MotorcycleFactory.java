@@ -2,15 +2,14 @@ package dev.arturo.models.factories;
 
 import dev.arturo.models.implementation.IVehicle;
 
-public class MotorcycleFactory extends TollFactory{
+public class MotorcycleFactory extends VehicleFactory{
 
-    public MotorcycleFactory(String name, String city, Integer tollAmount) {
-        super(name, city, tollAmount);
+    public MotorcycleFactory(String carRegistration) {
+        super(carRegistration);
     }
 
     @Override
     public IVehicle creatVehicle() {
-        // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'creatVehicle'");
     }
     

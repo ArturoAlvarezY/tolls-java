@@ -2,11 +2,11 @@ package dev.arturo.models.factories;
 
 import dev.arturo.models.implementation.IVehicle;
 
-public class CarFactory extends TollFactory {
+public class CarFactory extends VehicleFactory {
 
-    public CarFactory(String name, String city, Integer tollAmount) {
-        super(name, city, tollAmount);
-        }
+    public CarFactory(String carRegistration) {
+        super(carRegistration);
+    }
 
     @Override
     public IVehicle creatVehicle() {

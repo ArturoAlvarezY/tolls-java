@@ -1,7 +1,7 @@
 package dev.arturo.models.implementation;
 
-import dev.arturo.models.factories.TollFactory;
+import dev.arturo.models.Toll;
 
 public interface IVehicle {
-    public Number amountToPay(TollFactory tollFactory);
+    public Number amountToPay(Toll tollFactory);
 }
