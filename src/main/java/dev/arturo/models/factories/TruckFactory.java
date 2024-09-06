@@ -5,13 +5,20 @@ import dev.arturo.models.vehiclesproduct.Truck;
 
 public class TruckFactory extends VehicleFactory {
 
-    public TruckFactory(String carRegistration) {
-        super(carRegistration);
-    }
+    private Integer axis;
 
+    public TruckFactory(String carRegistration, Integer axis) {
+        super(carRegistration);
+
+        if (axis == null || axis == 0) {
+            throw new IllegalArgumentException("the Axios must be greater than 0!!");
+        }
+        this.axis = axis;
+    }
+    
     @Override
     public IVehicle creatVehicle() {
-        return new Truck(null);
+        return new Truck(axis);
     }
 
 }
