@@ -6,8 +6,9 @@ import dev.arturo.models.implementation.IVehicle;
 public class Motocycle implements IVehicle {
 
     @Override
-    public TollFactory amountToPay() {
-        throw new UnsupportedOperationException("Unimplemented method 'amountToPay'");
+    public Number amountToPay(TollFactory tollFactory) {
+        tollFactory.setTollAmount(tollFactory.getTollAmount()+1);
+        return 50;
     }
     
 }
