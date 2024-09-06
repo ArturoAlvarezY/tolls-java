@@ -1,8 +1,9 @@
 package dev.arturo.models.factories;
 
 import dev.arturo.models.implementation.IVehicle;
+import dev.arturo.models.vehiclesproduct.Motocycle;
 
-public class MotorcycleFactory extends VehicleFactory{
+public class MotorcycleFactory extends VehicleFactory {
 
     public MotorcycleFactory(String carRegistration) {
         super(carRegistration);
@@ -10,7 +11,7 @@ public class MotorcycleFactory extends VehicleFactory{
 
     @Override
     public IVehicle creatVehicle() {
-        throw new UnsupportedOperationException("Unimplemented method 'creatVehicle'");
+        return new Motocycle();
     }
-    
+
 }

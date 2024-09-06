@@ -1,6 +1,7 @@
 package dev.arturo.models.factories;
 
 import dev.arturo.models.implementation.IVehicle;
+import dev.arturo.models.vehiclesproduct.Car;
 
 public class CarFactory extends VehicleFactory {
 
@@ -10,9 +11,7 @@ public class CarFactory extends VehicleFactory {
 
     @Override
     public IVehicle creatVehicle() {
-        throw new UnsupportedOperationException("Unimplemented method 'creatVehicle'");
+        return new Car();
     }
 
-    
-    
 }

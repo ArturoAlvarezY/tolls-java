@@ -2,7 +2,7 @@ package dev.arturo.models;
 
 import dev.arturo.models.factories.VehicleFactory;
 
-public  class Toll {
+public class Toll {
 
     private String name;
     private String city;
@@ -19,18 +19,23 @@ public  class Toll {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getCity() {
         return city;
     }
+
     public void setCity(String city) {
         this.city = city;
     }
+
     public Integer getTollAmount() {
         return tollAmount;
     }
+
     public void setTollAmount(Integer integer) {
         this.tollAmount = integer;
     }
@@ -42,4 +47,4 @@ public  class Toll {
     public void setVehicleFactory(VehicleFactory vehicleFactory) {
         this.vehicleFactory = vehicleFactory;
     }
-}   
+}

@@ -7,8 +7,8 @@ public class Motocycle implements IVehicle {
 
     @Override
     public Integer amountToPay(Toll toll) {
-        toll.setTollAmount(toll.getTollAmount()+1);
+        toll.setTollAmount(toll.getTollAmount() + 1);
         return 50;
     }
-    
+
 }
