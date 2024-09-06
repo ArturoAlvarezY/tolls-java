@@ -15,7 +15,7 @@ public class TruckFactory extends VehicleFactory {
         }
         this.axis = axis;
     }
-    
+
     @Override
     public IVehicle creatVehicle() {
         return new Truck(axis);
